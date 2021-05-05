@@ -1,10 +1,13 @@
+import Weather from "./Weather";
+
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <div className="container">
-        <footer class="github-link" id="github-link">
+        <Weather />
+        <footer className="github-link" id="github-link">
           <small>
             Open-source{" "}
             <a
@@ -12,15 +15,15 @@ function App() {
               target="_blank"
               rel="noreferrer"
             >
-              <i class="fab fa-github"></i>
+              on github
             </a>
-            , by Savannah Hayes{" "}
+            , by{" "}
             <a
               href="http://linkedin.com/in/savannah-hayes-128b0418a"
               target="_blank"
               rel="noreferrer"
             >
-              <i class="fab fa-linkedin-in"></i>
+              Savannah Hayes
             </a>
           </small>
         </footer>

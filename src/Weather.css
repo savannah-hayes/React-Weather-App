@@ -1,0 +1,146 @@
+body {
+  background-image: url("https://i.pinimg.com/564x/ee/c4/16/eec4169c5e89189f59d86f21829e0454.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Barlow", sans-serif;
+}
+
+.weather-app-wrapper {
+  max-width: 550px;
+  margin: 30px auto;
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 3px 5px 5px 3px grey;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.weather-app {
+  padding: 20px;
+}
+
+.recent-cities {
+  border: none;
+  font-size: 16.5px;
+  background-color: transparent;
+}
+
+.weather-conditions {
+  margin-top: 28px;
+  max-width: 33.33%;
+}
+
+.weather-conditions h2 {
+  text-align: right;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.weather-description {
+  list-style: none;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.city-date {
+  max-width: 33.33%;
+}
+.city-date h1 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.city {
+  white-space: nowrap;
+  margin-top: 25px;
+  position: relative;
+}
+
+.date-format {
+  list-style: none;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.hour-forecast {
+  font-size: 20px;
+  margin-top: 25px;
+  font-weight: 900;
+}
+
+.weather-forecast ul {
+  list-style: none;
+  padding: 20px;
+  display: inline-block;
+}
+
+.weather-forecast li {
+  display: inline;
+  padding-right: 50px;
+}
+
+.search-form {
+  margin-top: 25px;
+}
+
+.input-group {
+  margin-bottom: 35px;
+  justify-content: center;
+}
+
+.form-outline {
+  width: 55%;
+}
+
+.celsius-link,
+.fahrenheit-link {
+  font-weight: 900;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.weather-temperature {
+  max-width: 33.33%;
+  border: transparent;
+  background-color: rgb(42, 162, 229);
+  margin-top: -10px;
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+}
+
+.temperature-unit {
+  margin-top: 35px;
+  list-style: none;
+  text-align: center;
+  position: relative;
+}
+
+.temperature {
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  margin-right: -1px;
+}
+
+.temperature-description {
+  margin-top: -3px;
+  list-style: none;
+  color: white;
+  white-space: nowrap;
+  position: relative;
+  text-align: center;
+  font-size: 16px;
+}
+
+.temperature-description::first-letter {
+  text-transform: capitalize;
+}
