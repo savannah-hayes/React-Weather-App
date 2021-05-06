@@ -103,8 +103,8 @@
 .Weather .fahrenheit-link {
   font-weight: 600;
   font-size: 15px;
-  color: white;
   position: relative;
+  color: white;
   left: 5px;
   top: -22px;
   text-decoration: none;
