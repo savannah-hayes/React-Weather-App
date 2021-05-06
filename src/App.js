@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <Weather />
+        <Weather defaultCity="Stockholm" />
         <footer className="github-link" id="github-link">
           <small>
             Open-source{" "}

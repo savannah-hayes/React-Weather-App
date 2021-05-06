@@ -79,7 +79,7 @@
 }
 
 .Weather .temperature-unit {
-  margin-top: 35px;
+  margin-top: 10px;
   list-style: none;
   text-align: center;
 }
@@ -87,7 +87,7 @@
 .Weather .weather-temperature {
   max-width: 33.33%;
   border: transparent;
-  background-color: rgb(37, 161, 228);
+  background-color: black;
   margin-top: -10px;
   border-radius: 50%;
   width: 180px;
@@ -112,15 +112,12 @@
 
 .Weather .temperature-description {
   margin-top: -3px;
+  margin-bottom: 7px;
   list-style: none;
   color: white;
   white-space: nowrap;
   text-align: center;
   font-size: 16px;
-}
-
-.Weather .temperature-description::first-letter {
-  text-transform: capitalize;
 }
 
 .weather-app {
