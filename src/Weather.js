@@ -48,10 +48,10 @@ function Weather() {
             <div className="col-sm-4 weather-temperature">
               <ul>
                 <li className="temperature-unit">
-                  <strong className="temperature">17 </strong>
+                  <strong className="temperature">17</strong>
                   <span className="units">
                     <a href="/" className="active celsius-link">
-                      °C |
+                      °C |{" "}
                     </a>
                     <a href="/" className="fahrenheit-link">
                       °F
