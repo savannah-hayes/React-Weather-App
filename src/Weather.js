@@ -17,7 +17,7 @@ function Weather(props) {
       humidity: response.data.main.humidity,
       pressure: response.data.main.pressure,
       description: response.data.weather[0].description,
-      icon: "https://ssl.gstatic.com/onebox/weather/64/rain_light.png",
+      icon: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
     });
   }
 

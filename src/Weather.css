@@ -110,10 +110,9 @@
 }
 
 .Weather .temperature-description {
-  margin-top: -3px;
-  margin-bottom: 7px;
   list-style: none;
   color: white;
+  margin-bottom: -18px;
   white-space: nowrap;
   text-align: center;
   font-size: 16px;
