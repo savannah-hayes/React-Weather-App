@@ -87,7 +87,7 @@
 .Weather .weather-temperature {
   max-width: 33.33%;
   border: transparent;
-  background-color: black;
+  background-image: url("https://i.pinimg.com/564x/ee/c4/16/eec4169c5e89189f59d86f21829e0454.jpg");
   margin-top: -10px;
   border-radius: 50%;
   width: 180px;
@@ -112,7 +112,7 @@
 .Weather .temperature-description {
   list-style: none;
   color: white;
-  margin-bottom: -18px;
+  margin-bottom: 10px;
   white-space: nowrap;
   text-align: center;
   font-size: 16px;
