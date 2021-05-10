@@ -25,7 +25,7 @@ function WeatherInfo(props) {
               {props.data.description}
             </li>
             <li className="temperature-description">
-              <WeatherIcon code={props.data.icon} />
+              <WeatherIcon code={props.data.icon} size={50} color={"white"} />
             </li>
           </ul>
         </div>
@@ -43,18 +43,6 @@ function WeatherInfo(props) {
             </li>
           </ul>
         </div>
-      </div>
-      <div className="hour-forecast">Daily Forecast:</div>
-      <div className="row weather-forecast">
-        <ul>
-          <li>Sun</li>
-          <li>Mon</li>
-          <li>Tue</li>
-          <li>Wed</li>
-          <li>Thu</li>
-          <li>Fri</li>
-          <li>Sat</li>
-        </ul>
       </div>
     </div>
   );

@@ -45,22 +45,6 @@
   font-size: 16px;
 }
 
-.Weather .hour-forecast {
-  font-size: 20px;
-  margin-top: 25px;
-  font-weight: 800;
-}
-
-.Weather .weather-forecast ul {
-  list-style: none;
-  padding: 15px;
-}
-
-.Weather .weather-forecast li {
-  display: inline;
-  padding-right: 50px;
-}
-
 .Weather .search-form {
   margin-top: 25px;
 }
