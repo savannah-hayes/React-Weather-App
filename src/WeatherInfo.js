@@ -30,13 +30,15 @@ function WeatherInfo(props) {
           </ul>
         </div>
         <div className="col-sm-4 weather-conditions">
-          <h2>Feels like: 15°C</h2>
           <ul>
             <li className="weather-description">
               Wind: {Math.round(props.data.wind)} m/s{" "}
             </li>
             <li className="weather-description">
               Humidity: {props.data.humidity} %
+            </li>
+            <li className="weather-description">
+              Feels like: {Math.round(props.data.feels)} °C
             </li>
             <li className="weather-description">
               Pressure: {props.data.pressure} hPa

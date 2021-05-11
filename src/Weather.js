@@ -20,6 +20,7 @@ function Weather(props) {
       pressure: response.data.main.pressure,
       description: response.data.weather[0].description,
       icon: response.data.weather[0].icon,
+      feels: response.data.main.feels_like,
     });
   }
 
