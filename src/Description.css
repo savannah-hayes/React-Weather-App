@@ -1,0 +1,30 @@
+.Description .temperature,
+.Description .icon,
+.Description .conditions {
+  max-width: 33.33%;
+}
+
+.Description h1 {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.Description ul {
+  margin-left: -40px;
+}
+
+.Description li {
+  list-style: none;
+}
+
+.Description .temperature-description {
+  margin-top: -10px;
+}
+
+.Description .icon {
+  text-align: center;
+}
+
+.Description .conditions {
+  text-align: right;
+}

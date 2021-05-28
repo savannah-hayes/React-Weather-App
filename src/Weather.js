@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import WeatherInfo from "./WeatherInfo";
-import WeatherForecast from "./WeatherForecast";
+import Description from "./Description";
+import Forecast from "./Forecast";
 import axios from "axios";
 
 import "./Weather.css";
@@ -15,6 +15,7 @@ function Weather(props) {
       date: new Date(response.data.dt * 1000),
       temperature: response.data.main.temp,
       city: response.data.name,
+      country: response.data.sys.country,
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
       pressure: response.data.main.pressure,
@@ -45,14 +46,6 @@ function Weather(props) {
       <div className="Weather">
         <div className="weather-app-wrapper">
           <div className="weather-app">
-            <div className="city-buttons">
-              <button className="recent-cities">Tokyo</button>
-              <button className="recent-cities">San Francisco</button>
-              <button className="recent-cities">Cape Town</button>
-              <button className="recent-cities">Melbourne</button>
-              <button className="recent-cities">São Paulo</button>
-              <button className="recent-cities">London</button>
-            </div>
             <form className="search-form" onSubmit={handleSubmit}>
               <div className="form">
                 <div className="input-group">
@@ -75,10 +68,30 @@ function Weather(props) {
                 </div>
               </div>
             </form>
-            <WeatherInfo data={weatherData} />
-            <WeatherForecast coordinates={weatherData.coordinates} />
+            <Description data={weatherData} />
+            <Forecast coordinates={weatherData.coordinates} />
           </div>
         </div>
+        <footer className="github-link" id="github-link">
+          <small>
+            Open-source{" "}
+            <a
+              href="https://github.com/savannah-hayes/React-Weather-App"
+              target="_blank"
+              rel="noreferrer"
+            >
+              on github
+            </a>
+            , by{" "}
+            <a
+              href="http://linkedin.com/in/savannah-hayes-128b0418a"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Savannah Hayes
+            </a>
+          </small>
+        </footer>
       </div>
     );
   } else {
