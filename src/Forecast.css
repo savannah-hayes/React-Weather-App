@@ -1,6 +1,8 @@
 .Forecast {
+  margin-top: 10px;
+  display: flex;
   text-align: center;
-  margin-top: 15px;
+  flex-direction: row;
 }
 
 .Forecast-temperature-min {

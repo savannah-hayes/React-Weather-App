@@ -1,0 +1,20 @@
+.weather-forecast .card {
+  position: relative;
+  padding: 5px 0;
+  background-color: #ffffff;
+  border: 1px solid #2a2a2a;
+  box-shadow: 3px 3px 1px rgb(137, 137, 137);
+  border-radius: 10px;
+}
+
+.weather-forecast .card-body {
+  padding: 0px;
+}
+
+.Forecast-day {
+  margin-bottom: 10px;
+}
+
+.Forecast-temperatures {
+  margin-top: 5px;
+}

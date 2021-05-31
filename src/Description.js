@@ -18,19 +18,14 @@ function Description(props) {
       </div>
       <div className="row">
         <div className="col-4 temperature">
-          <ul>
-            <li className="temperature-unit">
-              <Temperature celsius={props.data.temperature} />
-            </li>
-            <li className="temperature-description">
-              Feels like: {Math.round(props.data.feels)} °C
-            </li>
-          </ul>
+          <h2>
+            <Temperature celsius={props.data.temperature} />
+          </h2>
         </div>
         <div className="col-4 icon">
           <ul>
             <li className="icon-image">
-              <WeatherIcon code={props.data.icon} size={50} color={"#4F4CB2"} />
+              <WeatherIcon code={props.data.icon} size={65} color={"#4f4cb2"} />
             </li>
             <li className="icon-description">{props.data.description}</li>
           </ul>
@@ -42,6 +37,9 @@ function Description(props) {
             </li>
             <li className="weather-description">
               Humidity: {props.data.humidity} %
+            </li>
+            <li className="weather-description">
+              Feels like: {Math.round(props.data.feels)} °C
             </li>
             <li className="weather-description">
               Pressure: {props.data.pressure} hPa

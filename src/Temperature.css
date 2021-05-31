@@ -1,11 +1,16 @@
+.Temperature {
+  margin-bottom: -15px;
+}
+
 .Temperature .temp {
-  font-size: 60px;
+  font-size: 68px;
+  font-weight: 700;
 }
 
 .Temperature .units {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 20px;
   position: relative;
-  top: -25px;
+  top: -34px;
   text-decoration: none;
 }

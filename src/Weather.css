@@ -4,6 +4,7 @@
 
 .Weather .search-button {
   margin-left: 10px;
+  border: transparent;
 }
 
 .Weather .input-group {
@@ -12,7 +13,7 @@
 }
 
 .Weather .form-control {
-  border: 2px solid #3a3a3a;
+  border: 2px solid #4f4cb2;
 }
 
 .Weather .form-outline {
@@ -28,15 +29,16 @@
   padding: 0 10px;
   margin: 30px auto;
   border-radius: 20px;
-  border: 1px solid black;
+  border: transparent;
+  background-color: rgb(255, 255, 255);
 }
 
 .Weather footer {
   margin-top: -30px;
-  color: black;
+  color: rgb(241, 240, 240);
   text-align: center;
 }
 
 .Weather footer a {
-  color: rgb(183, 183, 183);
+  color: rgb(193, 193, 193);
 }

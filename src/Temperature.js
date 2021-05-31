@@ -4,10 +4,10 @@ import "./Temperature.css";
 
 function Temperature(props) {
   return (
-    <div className="Temperature">
+    <li className="Temperature">
       <span className="temp">{Math.round(props.celsius)}</span>
       <span className="units">°C</span>
-    </div>
+    </li>
   );
 }
 
