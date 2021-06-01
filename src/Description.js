@@ -1,9 +1,9 @@
 import React from "react";
 import WeatherIcon from "./WeatherIcon";
 import Temperature from "./Temperature";
+import FormattedDate from "./FormattedDate";
 
 import "./Description.css";
-import FormattedDate from "./FormattedDate";
 
 function Description(props) {
   return (
@@ -17,7 +17,7 @@ function Description(props) {
       <div className="row">
         <div className="col-4 temperature">
           <h2>
-            <Temperature celsius={props.data.temperature} />
+            <Temperature temperature={props.data.temperature} />
           </h2>
         </div>
         <div className="col-4 icon">

@@ -21,7 +21,7 @@ function Weather(props) {
       coordinates: response.data.coord,
       date: new Date(response.data.dt * 1000),
       temperature: response.data.main.temp,
-      fullcity: response.data.name + "," + response.data.sys.country,
+      fullcity: response.data.name + ", " + response.data.sys.country,
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
       pressure: response.data.main.pressure,

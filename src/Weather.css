@@ -32,13 +32,3 @@
   border: transparent;
   background-color: rgb(255, 255, 255);
 }
-
-.Weather footer {
-  margin-top: -30px;
-  color: rgb(241, 240, 240);
-  text-align: center;
-}
-
-.Weather footer a {
-  color: rgb(193, 193, 193);
-}

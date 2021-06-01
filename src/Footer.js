@@ -1,8 +1,10 @@
 import React from "react";
 
+import "./Footer.css";
+
 function Footer() {
   return (
-    <footer className="github-link" id="github-link">
+    <footer className="Footer">
       <small>
         Open-source{" "}
         <a

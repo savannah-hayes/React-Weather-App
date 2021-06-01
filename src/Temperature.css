@@ -9,8 +9,16 @@
 
 .Temperature .units {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 14px;
   position: relative;
   top: -34px;
-  text-decoration: none;
+}
+
+.Temperature a {
+  cursor: pointer;
+}
+
+.Temperature .active {
+  color: #4f4cb2;
+  font-size: 20px;
 }

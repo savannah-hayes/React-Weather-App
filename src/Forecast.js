@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import ForecastDay from "./ForecastDay";
+import axios from "axios";
 
 import "./Forecast.css";
-import axios from "axios";
 
 function Forecast(props) {
   const [loaded, setLoaded] = useState(false);

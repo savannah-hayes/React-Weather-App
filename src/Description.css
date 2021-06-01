@@ -7,16 +7,17 @@
 .Description h1 {
   font-weight: 700;
   font-size: 30px;
-  margin-bottom: 0px;
+  margin-bottom: 2px;
 }
 
 .Description h2 {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .Description h6 {
   font-size: 18px;
+  margin-bottom: 20px;
 }
 
 .Description ul {
