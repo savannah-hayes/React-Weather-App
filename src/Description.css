@@ -15,6 +15,10 @@
   margin-top: 10px;
 }
 
+.Description h6 {
+  font-size: 18px;
+}
+
 .Description ul {
   margin-left: -40px;
 }

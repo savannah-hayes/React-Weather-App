@@ -1,20 +1,18 @@
 import React from "react";
-import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
 import Temperature from "./Temperature";
 
 import "./Description.css";
+import FormattedDate from "./FormattedDate";
 
 function Description(props) {
   return (
     <div className="Description">
       <div className="city-date">
-        <h1 className="city">
-          {props.data.city}, {props.data.country}
-        </h1>
-        <h5>
-          <FormattedDate date={props.data.date} />
-        </h5>
+        <h1 className="city">{props.data.fullcity}</h1>
+        <h6>
+          <FormattedDate date={props.time} />
+        </h6>
       </div>
       <div className="row">
         <div className="col-4 temperature">

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Description from "./Description";
 import Forecast from "./Forecast";
+import Footer from "./Footer";
 import axios from "axios";
 
 import "./Weather.css";
@@ -8,14 +9,19 @@ import "./Weather.css";
 function Weather(props) {
   const [weatherData, setWeatherData] = useState({ loaded: false });
   const [city, setCity] = useState(props.defaultCity);
+  const [localData, setLocalData] = useState(new Date());
+
+  function getLocalTime(response) {
+    setLocalData(new Date(response.data.formatted));
+  }
+
   function handleResponse(response) {
     setWeatherData({
       loaded: true,
       coordinates: response.data.coord,
       date: new Date(response.data.dt * 1000),
       temperature: response.data.main.temp,
-      city: response.data.name,
-      country: response.data.sys.country,
+      fullcity: response.data.name + "," + response.data.sys.country,
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
       pressure: response.data.main.pressure,
@@ -23,6 +29,11 @@ function Weather(props) {
       icon: response.data.weather[0].icon,
       feels: response.data.main.feels_like,
     });
+    let lat = response.data.coord.lat;
+    let lon = response.data.coord.lon;
+    let timeDbKey = "S4RXUE2ZUA4K";
+    let timeDbUrl = `https://api.timezonedb.com/v2.1/get-time-zone?key=${timeDbKey}&format=json&by=position&lat=${lat}&lng=${lon}`;
+    axios.get(`${timeDbUrl}`).then(getLocalTime);
   }
 
   function search() {
@@ -68,30 +79,11 @@ function Weather(props) {
                 </div>
               </div>
             </form>
-            <Description data={weatherData} />
+            <Description data={weatherData} time={localData} />
             <Forecast coordinates={weatherData.coordinates} />
           </div>
         </div>
-        <footer className="github-link" id="github-link">
-          <small>
-            Open-source{" "}
-            <a
-              href="https://github.com/savannah-hayes/React-Weather-App"
-              target="_blank"
-              rel="noreferrer"
-            >
-              on github
-            </a>
-            , by{" "}
-            <a
-              href="http://linkedin.com/in/savannah-hayes-128b0418a"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Savannah Hayes
-            </a>
-          </small>
-        </footer>
+        <Footer />
       </div>
     );
   } else {

@@ -9,6 +9,18 @@ function FormattedDate(props) {
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
+
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = days[props.date.getDay()];
+
   let months = [
     "January",
     "February",
@@ -27,7 +39,7 @@ function FormattedDate(props) {
   let date = props.date.getDate();
   return (
     <div>
-      {month} {date}, {hours}:{minutes}
+      {day}, {date} {month} {hours}:{minutes}
     </div>
   );
 }
