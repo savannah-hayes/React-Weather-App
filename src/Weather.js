@@ -10,6 +10,7 @@ function Weather(props) {
   const [weatherData, setWeatherData] = useState({ loaded: false });
   const [city, setCity] = useState(props.defaultCity);
   const [localData, setLocalData] = useState(new Date());
+  const [unit, setUnit] = useState("celsius");
 
   function getLocalTime(response) {
     setLocalData(new Date(response.data.formatted));
@@ -21,6 +22,8 @@ function Weather(props) {
       coordinates: response.data.coord,
       date: new Date(response.data.dt * 1000),
       temperature: response.data.main.temp,
+      maxTemperature: response.data.main.temp_max,
+      minTemperature: response.data.main.temp_min,
       fullcity: response.data.name + ", " + response.data.sys.country,
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
@@ -31,7 +34,7 @@ function Weather(props) {
     });
     let lat = response.data.coord.lat;
     let lon = response.data.coord.lon;
-    let timeDbKey = "S4RXUE2ZUA4K";
+    let timeDbKey = "03FEFHUAPR4I";
     let timeDbUrl = `https://api.timezonedb.com/v2.1/get-time-zone?key=${timeDbKey}&format=json&by=position&lat=${lat}&lng=${lon}`;
     axios.get(`${timeDbUrl}`).then(getLocalTime);
   }
@@ -79,8 +82,17 @@ function Weather(props) {
                 </div>
               </div>
             </form>
-            <Description data={weatherData} time={localData} />
-            <Forecast coordinates={weatherData.coordinates} />
+            <Description
+              data={weatherData}
+              time={localData}
+              unit={unit}
+              setUnit={setUnit}
+            />
+            <Forecast
+              coordinates={weatherData.coordinates}
+              data={weatherData}
+              unit={unit}
+            />
           </div>
         </div>
         <Footer />

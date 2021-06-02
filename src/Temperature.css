@@ -16,6 +16,8 @@
 
 .Temperature a {
   cursor: pointer;
+  text-decoration: none;
+  color: black;
 }
 
 .Temperature .active {

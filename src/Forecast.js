@@ -5,6 +5,7 @@ import axios from "axios";
 import "./Forecast.css";
 
 function Forecast(props) {
+  console.log(props);
   const [loaded, setLoaded] = useState(false);
   const [forecast, setForecast] = useState(null);
 
@@ -24,7 +25,11 @@ function Forecast(props) {
           if (index < 5) {
             return (
               <div className="col weather-forecast" key={index}>
-                <ForecastDay data={dailyForecast} />
+                <ForecastDay
+                  data={dailyForecast}
+                  temperatures={props.data}
+                  unit={props.unit}
+                />
               </div>
             );
           } else {

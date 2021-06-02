@@ -17,7 +17,11 @@ function Description(props) {
       <div className="row">
         <div className="col-4 temperature">
           <h2>
-            <Temperature temperature={props.data.temperature} />
+            <Temperature
+              celsiusTemperature={props.data.temperature}
+              unit={props.unit}
+              setUnit={props.setUnit}
+            />
           </h2>
         </div>
         <div className="col-4 icon">
