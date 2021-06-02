@@ -5,7 +5,6 @@ import axios from "axios";
 import "./Forecast.css";
 
 function Forecast(props) {
-  console.log(props);
   const [loaded, setLoaded] = useState(false);
   const [forecast, setForecast] = useState(null);
 

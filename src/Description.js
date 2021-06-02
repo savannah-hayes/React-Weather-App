@@ -2,6 +2,7 @@ import React from "react";
 import WeatherIcon from "./WeatherIcon";
 import Temperature from "./Temperature";
 import FormattedDate from "./FormattedDate";
+import Conditions from "./Conditions";
 
 import "./Description.css";
 
@@ -32,22 +33,13 @@ function Description(props) {
             <li className="icon-description">{props.data.description}</li>
           </ul>
         </div>
-        <div className="col-4 conditions">
-          <ul>
-            <li className="weather-description">
-              Wind: {Math.round(props.data.wind)} m/s{" "}
-            </li>
-            <li className="weather-description">
-              Humidity: {props.data.humidity} %
-            </li>
-            <li className="weather-description">
-              Feels like: {Math.round(props.data.feels)} °C
-            </li>
-            <li className="weather-description">
-              Pressure: {props.data.pressure} hPa
-            </li>
-          </ul>
-        </div>
+        <Conditions
+          wind={props.data.wind}
+          humidity={props.data.humidity}
+          feels={props.data.feels}
+          pressure={props.data.pressure}
+          unit={props.unit}
+        />
       </div>
     </div>
   );
