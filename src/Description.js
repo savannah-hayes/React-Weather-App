@@ -11,19 +11,19 @@ function Description(props) {
     <div className="Description">
       <div className="city-date">
         <h1 className="city">{props.data.fullcity}</h1>
-        <h6>
+        <h2>
           <FormattedDate date={props.time} />
-        </h6>
+        </h2>
       </div>
       <div className="row">
         <div className="col-4 temperature">
-          <h2>
+          <h3>
             <Temperature
               celsiusTemperature={props.data.temperature}
               unit={props.unit}
               setUnit={props.setUnit}
             />
-          </h2>
+          </h3>
         </div>
         <div className="col-4 icon">
           <ul>
