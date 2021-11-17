@@ -1,34 +1,36 @@
 .Weather .search-form {
-  margin-top: 25px;
+    margin-top: 25px;
 }
 
 .Weather .search-button {
-  margin-left: 10px;
-  border: transparent;
+    margin-left: 10px;
+    border: transparent;
 }
 
 .Weather .input-group {
-  margin-bottom: 25px;
-  justify-content: center;
+    margin-bottom: 25px;
+    justify-content: center;
 }
 
 .Weather .form-control {
-  border: 2px solid #4f4cb2;
+    border: 2px solid #4f4cb2;
 }
 
 .Weather .form-outline {
-  width: 55%;
+    width: 55%;
 }
 
 .weather-app {
-  padding: 20px;
+    padding: 20px;
 }
 
 .weather-app-wrapper {
-  max-width: 550px;
-  padding: 0 10px;
-  margin: 30px auto;
-  border-radius: 20px;
-  border: transparent;
-  background-color: rgb(255, 255, 255);
+    max-width: 550px;
+    padding: 0 10px;
+    margin: 30px auto;
+    border-radius: 20px;
+    border: transparent;
+    background-image: url("./images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
